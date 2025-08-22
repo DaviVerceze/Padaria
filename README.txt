@@ -1,13 +1,53 @@
-Documento index.html utilizado para montar o código em html
+# Projeto Padaria
 
-index.html: Utilizado tags semanticas, como header, footer, section, etc.
-Utilizado tabelas e listas de forma semantica.
-Utilizado imagens e vídeos para a ilustração da página.
+Um site institucional para padaria, desenvolvido com **HTML5** e **CSS3**, que apresenta navegação por formulários (como cadastro, avaliação, pedido e contato) e uma estrutura estilosa com imagens, vídeos e seções semânticas.
 
-Não utilizado Js e CSS.
+---
 
-Pastas dentro da pasta "image" separadas, cada uma contendo um tipo de imagens, todas as pastas foram classificadas.
+##  Estrutura do Projeto
 
-Sistema de Navegação para formulários de "Cadastro", "Avaliação", "Pedido", "Contato".
+- **`index.html`** – Página principal com navegação básica e estrutura semântica (`<header>`, `<section>`, `<footer>`, tabelas, listas, etc.).
+- **`style.css`** – Estilos globais aplicados em todo o site.
+- **Pastas de imagens organizadas**:  
+  - `images/ambiente/`  
+  - `images/equipe/`  
+  - `images/eventos/`  
+  - `images/logo padaria/`  
+  - `images/producao/`  
+  - `images/produtos/`
+- **Formulários estilizados em `Formulários/` ou `Padaria/Formulários/`**:  
+  - cadastro.html / cadastro.css  
+  - contato.html / contato.css  
+  - feedback.html / feedback.css  
+  - pedido.html / pedido.css  
+  - estilos adicionais (`style1.css`, `style2.css`, etc.)
+- **`Padaria/Prints/`** – Capturas de tela do design final das páginas.
 
-Completamente estilizado com o uso de CSS, alterando texto, imagens, fundo, videos, formulários, cabeçalho, rodapé, seções1, etc.
+---
+
+##  Navegação
+
+A partir da página `index.html`, é possível acessar formulários para:  
+- **Cadastro**  
+- **Avaliação / Feedback**  
+- **Pedido**  
+- **Contato**
+
+Cada página possui uma versão com estilo próprio (em CSS) para diferenciar visualmente cada formulário.
+
+---
+
+##  Tecnologias Utilizadas
+
+- **HTML5**: Uso de tags semânticas (`<header>`, `<section>`, `<footer>`, tabelas, listas, etc.).
+- **CSS3**: Estilização completa, cores, tipografia, layout responsivo e personalização visual.
+- **Imagens estáticas** (nenhum JavaScript ou frameworks utilizados até o momento).
+
+---
+
+##  Como Executar
+
+1. Clone este repositório:
+
+   ```bash
+   git clone https://github.com/DaviVerceze/Padaria.git
