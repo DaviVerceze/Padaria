@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Avaliação</title>
+  <link rel="stylesheet" href="feedback.css" > 
+</head>
+<body>
+    <h1>Formulário de feedback</h1>
+    <p>Avalie a nossa padaria.</p>
+
+    <form action="/enviar-mensagem" method="post">
+        <fieldset>
+            <legend><h2>Avaliação</h2></legend>
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome_usuario" placeholder="Digite seu nome completo" required><br><br>
+
+            <label for="email">E-mail</label><br>
+            <input type="email" id="email" name="email_usuario" placeholder="Digite o seu e-mail"><br><br>
+                
+
+            <p>O que deseja avaliar?</p>
+            <select required>
+                <option>Pães</option>
+                <option>Doces</option>
+                <option>Salgados</option>
+                <option>Atendimento</option>
+                <option>Ambiente</option>
+                <option>Preços</option>
+            </select>
+
+            <p>Escolha uma opção:</p>
+            <input type="radio" id="excelente" name="avaliacao" value="excelente">
+            <label>Excelente</label><br>
+
+            <input type="radio" id="bom" name="avaliacao" value="bom">
+            <label>Bom</label><br>
+
+            <input type="radio" id="regular" name="avaliacao" value="regular">
+            <label>regular</label><br>
+
+            <input type="radio" id="ruim" name="avaliacao" value="ruim">
+            <label>ruim</label><br>
+
+            <p>Comentários adicionais:</p>
+            <textarea id="comentarios" name="comentarios_adicionais" value="comentarios" placeholder="Faça comentários adicionais..." rows="5" cols="30"></textarea><br><br>
+
+            <input type="checkbox">
+            <label>Recomendaria para amigos?</label><br>
+
+            <input type="checkbox">
+            <label>Autoriza publicação do depoimento?</label>
+
+        </fieldset>
+
+<br>
+<input type="submit" value="Enviar">

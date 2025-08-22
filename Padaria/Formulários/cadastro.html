@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário para cadastro</title>
+  <link rel="stylesheet" href="style1.css"> 
+</head>
+<body>
+    <h1>Formulário para cadastro</h1>
+  <div class="container"></div>
+    <section class="seus-dados">
+    <form action="/enviar-mensagem" method="post">
+        <fieldset>
+            <legend><h2>Seus Dados</h2></legend>
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome_usuario" placeholder="Digite seu nome completo" required><br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="tel_usuario" placeholder="Digite seu telefone" required><br><br>
+            
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email_usuario" placeholder="Digite seu e-mail" required><br><br>
+        
+            <label for="email">Data de nascimento:</label><br>
+            <input type="date" id="nascimento" name="nascimento_usuario" required>
+        </fieldset>
+      </div>
+  </section>
+
+<fieldset>
+    <legend><h2>Seção 2 - Endereço</h2></legend>
+  
+    <label for="rua">Rua:</label><br>
+    <input type="text" id="rua" name="rua" required><br><br>
+  
+    <label for="numero">Número:</label><br>
+    <input type="number" id="numero" name="numero" required><br><br>
+  
+    <label for="bairro">Bairro:</label><br>
+    <input type="text" id="bairro" name="bairro" required><br><br>
+  
+    <label for="cep">CEP:</label><br>
+    <input type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="12345-678" required><br><br>
+  </fieldset>
+
+
+      <div class="checkbox-container">
+        <fieldset>
+          <legend><h2>Seção 3 - Preferências</h2></legend>
+          <p>Tipos de produtos favoritos:</p><br>
+
+          <label>
+            <input type="checkbox" name="preferencias" value="paes">
+            Pães artesanais
+          </label>
+
+          <label>
+            <input type="checkbox" name="preferencias" value="doces">
+            Doces e bolos
+          </label>
+
+          <label>
+            <input type="checkbox" name="preferencias" value="salgados">
+            Salgados
+          </label>
+
+          <label>
+            <input type="checkbox" name="preferencias" value="diet">
+            Produtos diet/light
+          </label>
+
+          <label>
+            <input type="checkbox" name="preferencias" value="integrais">
+            Produtos integrais
+          </label>
+        </fieldset>
+      </div>
+
+  
+  <!-- Seção 4 - Termos -->
+  <fieldset>
+    <legend><h2>Seção 4 - Termos</h2></legend>
+  
+    <input type="checkbox" id="promo" name="promocoes" required>
+    <label for="promo">Aceita receber promoções por email</label><br><br>
+  
+    <input type="checkbox" id="termos" name="termos" required>
+    <label for="termos">Aceita os termos de uso</label><br>
+  </fieldset>
+  
+<br>
+<input type="submit" value="Enviar">
